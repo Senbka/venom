@@ -17,6 +17,14 @@
 			<img class="logo-image" width="46" height="71" src="img/logo.png" alt="logo: Venom">
 		</a>
 		<nav class="nav">
+			<button class="menu-button">
+					<span class="menu-button-text">меню</span>
+					<img src="/img/menu.svg" alt="icon: burger menu" class="menu-button-icon">
+				</button>
+				<button class="menu-close">
+					<span class="menu-close-text">закрыть</span>
+					<img src="/img/arrow.svg" alt="icon: arrow right" class="menu-close-icon">
+				</button>
 			<ul class="nav-menu">
 				<li class="nav-menu-item">
 					<a class="nav-menu-link" href="about.html">о фильме</a>
@@ -34,17 +42,17 @@
 		</nav>
 	</header>
 	<div class="film">
-		<div class=film-text">
+		<div class="film-text">
 			<span class="film-date">16 сентября 2021</span>
 			<img class="film-logo" src="img/venom-2.svg" alt="logo: venom-2" >
 			<p class="film-description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
 		</div>
 		<!-- /.film-text -->
 		<div class="button-group">
-			<button class="button button-primary">
+			<a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
 				<img class="button-icon" width="15" src="img/play.svg"  alt="icon:play">
 				<span class="button-text">смотреть трейлер</span>
-			</button>
+			</a>
 			<a class="button button-link" href="trailer.html">
 				<img class="button-icon" width="15" src="img/ticket.svg" alt="icon: Ticket" >
 				<span class="button-text">билеты на премьеру</span>
@@ -56,5 +64,10 @@
 	</div>
 	<!-- /.container -->
 	<img class="venom" src="img/venom.png" alt="photo: venom">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="./js/main.js"></script>
 </body>
 </html>
